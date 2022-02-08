@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+
+--color-red: hsl(0, 78%, 62%);
+
+--color-cyan: hsl(180, 62%, 55%);
+
+--color-orange: hsl(34, 97%, 64%);
+
+--color-blue: hsl(212, 86%, 64%);
+
+--color-darkblue: hsl(234, 12%, 34%);
+
+--color-grayishblue: hsl(229, 6%, 66%);
+
+--color-lightgray: hsl(0, 0%, 98%);
+}
+
+
+html{
+    min-height: 100vh;
+}
+
+body{
+    background-color: var(--color-lightgray);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    padding: 10%;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.heading{
+    color: var(--color-darkblue);
+    font-size: 6vw;
+}
+.lighter{
+    font-weight: 400;
+}
+.bolder{
+    font-weight: 600;
+}
+
+.text{
+    font-size: 4vw;
+    font-weight: 400;
+    color: var(--color-grayishblue);
+    padding-top: 15px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 6px;
+    margin-bottom: 10%;
+    box-shadow: 5px 5px 15px 5px var(--color-grayishblue);
+}
+.card img{
+    padding: 5%;
+    align-self: flex-end;
+}
+
+.card-title{
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--color-darkblue);
+}
+.card-text{
+    font-size: 1rem;
+    line-height: 2;
+    color: var(--color-grayishblue);
+}
+
+.supervisor{
+    border-top: solid 6px var(--color-cyan);
+}
+.team-builder{
+    border-top: solid 6px var(--color-red);
+}
+.karma{
+    border-top: solid 6px var(--color-orange);
+}
+.calculator{
+    border-top: solid 6px var(--color-blue);
+}
+
+footer{
+    padding: 2%;
+}
+.attribution {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+    transition: color 1s;
+}
+.attribution a:hover {
+    color: hsl(228, 45%, 44%, 0.75);
+    transition: color 1s;
+}
+
+
+@media screen and (min-width: 1200px){
+
+    .container{
+        min-height: 100vh;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+    .text{
+        font-size: 1.2rem;
+        width: 50%;
+    }
+
+    .cards{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+        padding: 3%;
+    }
+
+    .card{
+        max-width: 400px;
+    }
+
+    .column{
+        width: 30%;
+    }
+
+    .attribution{
+        font-size: 0.9rem;
+    }
+
+}
